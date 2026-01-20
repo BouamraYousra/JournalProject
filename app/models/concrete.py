@@ -1,6 +1,7 @@
 import os
 from .base import BaseEntry
 
+
 class TextEntry(BaseEntry):
     def __init__(self, title: str, body: str):
         self.title = title
@@ -18,6 +19,7 @@ class TextEntry(BaseEntry):
             "type": "TEXT"
         }
 
+
 class FileEntry(BaseEntry):
     def __init__(self, path: str):
         self.path = path
@@ -25,7 +27,7 @@ class FileEntry(BaseEntry):
         allowed = ('.txt', '.csv', '.md', '.json', '.log')
         if not path.lower().endswith(allowed):
             raise ValueError(f"Unsupported file type! Use: {allowed}")
-            
+
         if not os.path.exists(path):
             raise FileNotFoundError(f"File not found: {path}")
 
