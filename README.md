@@ -320,6 +320,7 @@ flake8 app/
 git add .
 git commit -m "Description of changes"
 git push origin branch-name
+```
 
 👥 made by 
 
