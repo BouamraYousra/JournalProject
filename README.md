@@ -53,7 +53,8 @@ cd JournalProject ```
 ### Install dependencies
 
 pip install -r requirements.txt
-exit 0
+```
+
 
 ### Database Setup
 
@@ -93,11 +94,13 @@ self.mysql = pymysql.connect(
 
     Run the application
 
-bash
+```bash
 
 python main.py
 
-📚 Course Alignment
+```
+
+📚 ###Course Alignment
 Part 3: File & Database Handling ✅
 
     Multi-format file operations (TXT, CSV with JSON metadata)
