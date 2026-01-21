@@ -100,7 +100,7 @@ python main.py
 
 ```
 
-📚 ###Course Alignment
+# 📚 Course Alignment
 Part 3: File & Database Handling ✅
 
     Multi-format file operations (TXT, CSV with JSON metadata)
@@ -113,7 +113,7 @@ Part 3: File & Database Handling ✅
 
     File system synchronization
 
-Part 4: Structured, Modular & OOP ✅
+## Part 4: Structured, Modular & OOP ✅
 
     Abstract Base Classes with concrete implementations
 
@@ -125,7 +125,7 @@ Part 4: Structured, Modular & OOP ✅
 
     Modular and extensible architecture
 
-Part 5: Collaboration & Best Practices ✅
+## Part 5: Collaboration & Best Practices ✅
 
     Comprehensive unit and integration testing (pytest)
 
@@ -137,30 +137,30 @@ Part 5: Collaboration & Best Practices ✅
 
     Professional development practices
 
-🔧 Design Patterns Implemented
+# 🔧 Design Patterns Implemented
 Pattern	Implementation	Purpose
 Factory	StorageFactory	Create different entry types (TEXT, FILE)
 Decorator	EntryFeature → SecretEntry, MultilingualEntry	Add features without modifying base classes
 Singleton	DatabaseService	Single instance for database connections
 Strategy	Different storage backends	Interchangeable storage methods
 Abstract Factory	Entry creation system	Family of related objects
-🧪 Testing
+# 🧪 Testing
 
 Run the comprehensive test suite:
 bash
 
-# Run all tests
-pytest tests/ -v
+## Run all tests
+pytest .
 
-# Run specific test file
+## Run specific test file
 pytest tests/test_logic.py -v
 pytest tests/test_files.py -v
 
-# Run with coverage report
-pytest --cov=app tests/
+## Run with coverage report
+pytest --cov=app tests
 
-# Code quality check
-flake8 app/
+## Code quality check
+flake8 .
 
 Test Coverage:
 
@@ -176,7 +176,7 @@ Test Coverage:
 
     Error handling scenarios
 
-🌐 Multilingual & RTL Support
+# 🌐 Multilingual & RTL Support
 Supported Languages:
 
     Right-to-Left: Arabic (with proper character reshaping)
@@ -197,7 +197,7 @@ Arabic Support Details:
 
     Handles mixed-direction text correctly
 
-🔒 Security Features
+# Security Features
 
     Password Protection: Individual entries can be password-protected
 
@@ -209,7 +209,7 @@ Arabic Support Details:
 
     File Permissions: Respects OS-level file system permissions
 
-📁 File Operations
+# 📁 File Operations
 Supported Formats:
 
     TXT: Structured format with embedded JSON metadata section
@@ -242,7 +242,7 @@ Import/Export Workflow:
 
     Optional: Link to file for auto-synchronization
 
-🗄️ Database Architecture
+# 🗄️ Database Architecture
 MySQL (Relational - Metadata)
 sql
 
@@ -279,7 +279,7 @@ Hybrid Approach Benefits:
 
     Data redundancy and backup options
 
-🐛 Troubleshooting
+# 🐛 Troubleshooting
 Issue	Solution
 MySQL connection failed	Verify credentials in database.py, ensure MySQL service is running
 MongoDB connection failed	Start MongoDB service: sudo systemctl start mongod (Linux)
@@ -320,9 +320,9 @@ flake8 app/
 git add .
 git commit -m "Description of changes"
 git push origin branch-name
-```
 
-👥 made by 
+
+# 👥 made by 
 
     [BOUAMRA Yousra]
 Course: Programming Fundamentals & Techniques
