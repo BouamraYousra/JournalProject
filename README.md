@@ -53,8 +53,9 @@ cd JournalProject ```
 ### Install dependencies
 
 pip install -r requirements.txt
+exit 0
 
-    Database Setup
+### Database Setup
 
 MySQL:
 sql
